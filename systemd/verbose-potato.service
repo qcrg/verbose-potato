@@ -1,0 +1,12 @@
+[Unit]
+Description=Verbose Potato service
+After=network.target
+
+[Service]
+User=nobody
+NoNewPrivileges=true
+ExecStart=verbose-potato
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
